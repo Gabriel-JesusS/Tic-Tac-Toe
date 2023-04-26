@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Mono+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    overflow: hidden;
+    background-color: #201f1f;
+}
+
+
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.rodar {
+    animation: rot 900ms ease-in alternate-reverse;
+}
+
+.btnsContainer {
+    border-radius: 10px;
+    max-width: 350px;
+    height: 363px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1fd8f9, #1396ca);
+    box-shadow: 0px 0px 3px #1fd8f9;
+}
+
+.trr {
+    rotate: 90deg;
+    position: relative;
+    right: 60px;
+    top: -187px;
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #252525;
+
+}
+
+.trr:last-child {
+    rotate: 90deg;
+    left: 60px;
+    top: -205px;
+}
+
+hr {
+    background-color: #252525;
+    border: none;
+    padding: 8px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button {
+    border-radius: 10px;
+    transition: background 500ms ease-in;
+    text-align: center;
+    outline: none;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(#1fd8f9, #1396ca);
+    font-size: 70pt;
+    color: transparent;
+    box-shadow: 0px 0px 3px #1fd8f9;
+    cursor: pointer;
+    border: transparent;
+
+}
+
+button:hover {
+    background: #1396ca
+}
+
+@keyframes float {
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+@keyframes rot {
+    100% {
+        rotate: 180deg;
+    }
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 1px 0px 10px #1396ca;
+}
+
+h1 {
+    color: #fff;
+    font-size: 33pt;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #1bceed 10%, #1396ca 50%, #e5f4f6 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 50% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.points {
+
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 0px -4px 5px #000;
+    color: #1fd8f9;
+    font-size: 50pt;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.points span {
+    margin-top: 20px;
+    font-size: 20pt;
+
+    height: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #1fd8f9;
+    text-align: center;
+
+    text-shadow: 0px -4px 5px #000;
+}
+
+.containerWins {
+    display: flexbox;
+    text-align: center;
+    position: relative;
+    top: -252px;
+    background-color: #252525;
+    max-width: 220px;
+    padding: 60px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease-in-out;
+}
+
+.pointsMsg {
+    opacity: 0;
+    animation: msg 2s ease-in-out;
+}
+
+@keyframes msg {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+        /* Chega em 1, 100% */
+    }
+
+}
+
+.opaci {
+    opacity: 0;
+    /* Inicia com 0 */
+    animation: fadeIn 1s forwards;
+    /* Animação de fadeIn com duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+    to {
+        visibility: visible;
+        opacity: 1;
+        /* Chega em 1, 100% */
+    }
+}
+
+#msgWins {
+    color: #fff;
+    font-size: x-large;
+}
