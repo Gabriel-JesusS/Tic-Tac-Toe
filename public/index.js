@@ -47,8 +47,8 @@ function changesBtnsMarked(bt) {
     bt.textContent = changePlayer;
 
     //CONDIÇÃO ALTERA O JOGADOR
-    if (bt.innerText == 'X') changePlayer = player2(),playerSelectcolor= selectedPlayer1Efects(),removeSelectEfectPlayer2();
-    if (bt.innerText == 'O') changePlayer = player1(),playerSelectcolor = selectedPlayer2Efects(),removeSelectEfectPlayer1();
+    if (bt.innerText == 'X') changePlayer = player2(),playerSelectcolor= selectedPlayer2Efects(),removeSelectEfectPlayer1();
+    if (bt.innerText == 'O') changePlayer = player1(),playerSelectcolor = selectedPlayer1Efects(),removeSelectEfectPlayer2();
 
 
     //ESSA LINHA DE CODIGO FOI INPLAMENTADA PARA RESOLVER UM PROBLEMA OCRRIDO NO CSS, ESSA LINHA FAZ QUE O SINAL "." FIQUE ECSCONDIDO PARA MELHORAR A INTERFACE
@@ -206,8 +206,8 @@ function countPoints(numberPlayer) {
 //SE DETERMINADO JOGADOR TIVER 3 PONTOS ELE VENCE
 function wins(p1, p2) {
     //ARRAYDRAW É IGUAL A VAZIO PARA NÃO HAVER EMPATES POR MEIO DE BUGS CASO O JOGADOR CLIQUE VARIAS VEZES NOS BOTÕES 
-    if (p1 == 3) disableAllbuttons(), arryDraw = null, animationMsgWinsTotal(), msgWins.textContent = 'Player1 Wins! 🏆', setTimeout(() => location.reload(), 5000)
-    if (p2 == 3) disableAllbuttons(), arryDraw = null, animationMsgWinsTotal(), msgWins.textContent = 'Player2 Wins! 🏆', setTimeout(() => location.reload(), 5000)
+    if (p1 == 3) disableAllbuttons(), arryDraw = null, animationMsgWinsTotal(),selectedPlayer1Efects(),removeSelectEfectPlayer2(), msgWins.textContent = 'Player1 Wins! 🏆', setTimeout(() => location.reload(), 5000)
+    if (p2 == 3) disableAllbuttons(), arryDraw = null, animationMsgWinsTotal(),selectedPlayer2Efects(),removeSelectEfectPlayer1(), msgWins.textContent = 'Player2 Wins! 🏆', setTimeout(() => location.reload(), 5000)
 }
 
 
