@@ -143,12 +143,10 @@ h1 {
 .points span {
     margin-top: 20px;
     font-size: 20pt;
-
     height: 30px;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #1fd8f9;
     text-align: center;
-
     text-shadow: 0px -4px 5px #000;
 }
 
@@ -205,6 +203,6 @@ h1 {
     font-size: x-large;
 }
 
-.playerSelect{
+.playerSelect {
     color: #e5f4f6;
 }
