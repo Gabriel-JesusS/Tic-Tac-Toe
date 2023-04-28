@@ -9,4 +9,4 @@
 <li>When players hit the right combination they score 1 point.</li>
 <li>The player who scores 3 points first wins and the game restarts.</li>
 
-<h2>The game Link:</h2>
+<h2>The game Link:https://gabriel-jesuss.github.io/Tic-Tac-Toe/</h2>
