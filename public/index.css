@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Mono+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     padding: 0;
     margin: 0 auto;
@@ -9,8 +9,6 @@ body {
     overflow: hidden;
     background-color: #201f1f;
 }
-
-
 
 .container {
     align-items: center;
@@ -143,16 +141,15 @@ h1 {
 .points span {
     margin-top: 20px;
     font-size: 20pt;
-
     height: 30px;
     font-family: "Josefin Sans", sans-serif;
     color: #1fd8f9;
     text-align: center;
-
     text-shadow: 0px -4px 5px #000;
 }
 
 .containerWins {
+
     display: flexbox;
     text-align: center;
     position: relative;
@@ -162,13 +159,13 @@ h1 {
     padding: 60px;
     border-radius: 5px;
     visibility: hidden;
-    opacity: 0;
+    opacity:0;
     transition: opacity ease-in-out;
 }
 
 .pointsMsg {
     opacity: 0;
-    animation: msg 2s ease-in-out;
+    animation: msg 3s ease-in-out;
 }
 
 @keyframes msg {
@@ -202,7 +199,11 @@ h1 {
 
 #msgWins {
     color: #fff;
-    font-size: x-large;
+    text-shadow:3px 0px 1px #1fd8f9;
+    font-size: 19pt;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 .playerSelect{
