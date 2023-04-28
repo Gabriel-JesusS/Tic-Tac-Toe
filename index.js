@@ -186,14 +186,14 @@ function countPoints(numberPlayer) {
 
         if (numberPlayer == 1) {
             pointsPlayer1.innerHTML = `player1 <br> ${p1Points += 1}`;
-            msg(), msgWins.textContent = `Player1: ${p1Points}`, msgRemove();
+            msg(), msgWins.innerHTML = `Player1: ${p1Points} points`, msgRemove();
             marked = player2();
             disableAllbuttons();
 
         }
         else {
             pointsPlayer2.innerHTML = `player2 <br> ${p2Points += 1}`;
-            msg(), msgWins.textContent = `Player2: ${p2Points}`, msgRemove();
+            msg(), msgWins.innerHTML = `Player2: ${p2Points} points`, msgRemove();
             marked = player1();
             disableAllbuttons();
 
